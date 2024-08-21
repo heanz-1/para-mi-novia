@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Solecito 🌻💗</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Para mi solecito 🌻</h1>
+        <p>11 meses juntos, y cada día me haces más feliz. 💗</p>
+        <p>Capaz esperas algo material pero te lo hice con mucho amor :,(</p>
+        <br>
+
+        <div class="interactive-section">
+            <p>Haz clic en el corazón para descubrir todos los momentos que amo de ti:</p>
+            <button id="heart-button">💗</button>
+            <ul id="moments-list" class="hidden">
+                <li>Tu risa contagiosa que alegra mi día.</li>
+                <li>Las veces que me escuchas con paciencia.</li>
+                <li>Cómo siempre sabes qué decir para hacerme sonreír.</li>
+                <li>Tu apoyo incondicional en los momentos difíciles.</li>
+                <li>Las pequeñas sorpresas que me das sin razón alguna.</li>
+                <li>Tu mirada, que me hace sentir amado.</li>
+            </ul>
+        </div>
+
+        <div class="gallery-section">
+            <h2>Nuestros recuerdos</h2>
+            <p>Pasa el cursor sobre las fotos para ver nuestros recuerdos juntos:</p>
+            <div class="gallery">
+                <img src="/fotos/1.jpg" alt="Recuerdo 1" class="photo" data-caption="Nuestra primera foto">
+                <img src="/fotos/2.jpg" alt="Recuerdo 2" class="photo" data-caption="La vez que fuimos a la playa">
+                <img src="/fotos/3.jpg" alt="Recuerdo 3" class="photo" data-caption="Nuestra foto favorita">
+            </div>
+            <p id="photo-caption"></p>
+        </div>
+
+        <div class="quiz-section">
+            <h2>¿Cuánto sabes sobre nuestro amor?</h2>
+            <p>Responde este pequeño quiz:</p>
+            <div class="quiz-question">
+                <p>¿Dónde fue nuestra primera cita real?</p>
+                <button class="quiz-option">En el cine</button>
+                <button class="quiz-option">En el parque</button>
+                <button class="quiz-option">En tu universidad</button>
+            </div>
+            <p id="quiz-feedback" class="hidden"></p>
+        </div>
+
+        <div class="music-section">
+            <h2>Nuestra Canción</h2>
+            <p>Ponle play para escuchar nuestra canción especial:</p>
+            <audio controls>
+                <source src="/musica/Solecito - Universe.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+
+        <div class="secret-section">
+            <h2>Mensaje secreto</h2>
+            <p>Escribe "Te amo" en el cuadro para desbloquear un mensaje:</p>
+            <input type="text" id="secret-input" placeholder="Escribe aquí...">
+            <p id="secret-message" class="hidden">¡Sabía que lo dirías! 💗🌻</p>
+        </div>
+
+        <div class="timeline-section">
+            <h2>Nuestra Historia</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Inicio de nuestra historia</h3>
+                    <p>Recuerdo el primer día que nos conocimos como si fuera ayer. Fue un día lleno de magia y promesas.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Primeras citas</h3>
+                    <p>Nuestras primeras citas fueron inolvidables. Cada momento a tu lado fue un regalo.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Primer aniversario</h3>
+                    <p>Celebramos nuestro primer aniversario, un momento significativo en nuestra relación.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>11 meses juntos</h3>
+                    <p>Hoy celebramos 11 meses juntos. Cada día a tu lado es una aventura maravillosa.</p>
+                </div>
+            </div>
+        </div>
+        <div class="final-message">
+            <p>Gracias por estos maravillosos 11 meses. Te amo más de lo que las palabras pueden expresar.</p>
+            <p id="hidden-message" class="hidden">¡Feliz aniversario, mi solecito! Estoy emocionado por todo lo que nos espera juntos.</p>
+            <button id="reveal-message-button">Revelar mensaje especial</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
